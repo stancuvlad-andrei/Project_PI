@@ -1,0 +1,166 @@
+/* Resetting default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation styles */
+ul {
+    list-style: none;
+    background-color: #2c3e50; /* Updated background color */
+    overflow: hidden;
+    text-align: center; /* Centering the navigation */
+}
+
+ul li {
+    display: inline-block; /* Making list items display inline-block */
+}
+
+ul li a {
+    display: block;
+    color: #ecf0f1; /* Updated text color */
+    text-align: center;
+    padding: 20px 24px; /* Increased vertical padding for taller nav bar */
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Adding transition for smoother hover effect */
+}
+
+ul li a:hover {
+    background-color: #34495e; /* Hover color */
+    color: #ffffff; /* Text color on hover */
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 600px) {
+    ul li {
+        display: block;
+        width: 100%; /* Full-width for smaller screens */
+        text-align: left; /* Resetting text alignment for mobile */
+    }
+}
+
+.cover-container {
+    position: relative;
+}
+
+.cover-container .cover-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #34495e; /* Adjust text color as needed */
+}
+
+.cover-text h1 {
+    font-size: 5em;
+    margin-bottom: 10px;
+}
+
+
+/* Your existing CSS for the navbar */
+
+.navbar {
+    list-style: none;
+    background-color: #2c3e50; /* Navbar background color */
+    overflow: hidden;
+    text-align: center;
+    padding: 20px 0; /* Adjusted padding for the navbar */
+    margin: 0;
+}
+
+.navbar li {
+    display: inline-block;
+    margin: 0 10px; /* Adjusted spacing between navbar items */
+}
+
+.navbar li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar li a:hover {
+    color: #ffffff;
+}
+
+/* Adding cover image */
+.cover-image {
+    background-size: cover;
+    height: 500px; /* Adjust the height as needed */
+    width: 100%;
+    object-fit: cover;
+}
+/* Let's Begin Button */
+.button-container {
+    text-align: center;
+    margin-top: 50px; /* Ajustat spațiul de sus */
+}
+
+.big-button {
+    padding: 20px 40px; /* Mărit padding-ul pentru a face butonul mai mare */
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px; /* Mărit raza de colț */
+    font-size: 20px; /* Mărit dimensiunea fontului */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.big-button:hover {
+    background-color: #2980b9;
+}
+
+/* About Us Section */
+.about-us {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.about-text {
+    max-width: 50%;
+    padding: 20px;
+}
+
+.about-image img {
+    max-width: 100%;
+    max-height: 300px; /* Adjust the height as needed */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+/* Stiluri pentru Footer Section */
+.footer {
+    margin-top: 100px;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+.footer a {
+    color: #3498db;
+    text-decoration: none;
+}
+

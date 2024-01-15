@@ -1,0 +1,170 @@
+
+
+/* Adding cover image */
+.cover-image {
+    background-size: cover;
+    height: 300px; /* Set the height to match the profile image */
+    width: 100%;
+    object-fit: cover;
+}
+/* ... Your existing styles ... */
+
+.cover-container {
+    position: relative;
+}
+
+.cover-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #34495e; /* Match the color of the navbar */
+}
+
+.cover-text h2 {
+    font-size: 3em; /* Adjust the font size as needed */
+    margin-bottom: 10px;
+}
+
+/* ... Your existing styles ... */
+
+
+.job-listing {
+    margin-top: 20px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 0; /* Remove padding */
+}
+
+/* Updated Styles for Job Cards */
+.job-cards-container {
+    width: 100%;
+    overflow-x: hidden; /* Disable horizontal scrolling */
+    white-space: nowrap; /* Prevent cards from wrapping */
+    padding-bottom: 20px; /* Add space for the scrollbar */
+    display: flex; /* Use flexbox for centering */
+    justify-content: space-between; /* Space between rows */
+    scroll-behavior: smooth; /* Smooth scroll transition */
+}
+
+.job-cards {
+    flex: 1; /* Allow cards to fill the row */
+    display: flex; /* Display job cards in a single row */
+    flex-wrap: nowrap; /* Prevent wrapping */
+    transition: transform 0.5s ease;
+    align-items: flex-start; /* Align cards to the top */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    list-style: none; /* Remove default list styles */
+    justify-content: space-around; /* Space between cards */
+    gap: 20px; /* Add gap between cards */
+    padding: 0 20px; /* Add padding to the sides */
+}
+
+.job-link {
+    text-decoration: none; /* Remove default link styling */
+    width: calc(30% - 40px); /* Set the width for 3 cards per row */
+    margin-bottom: 20px; /* Add space below cards */
+}
+
+.job-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease; /* Add a transition effect */
+    height: 100%; /* Ensure the card takes full height */
+    display: flex; /* Allow card content to expand */
+    flex-direction: column; /* Arrange content in a column */
+    justify-content: space-between; /* Space between card content */
+    padding: 10px; /* Add padding inside cards */
+    background-color: #fff; /* Change card background */
+    width: 100%; /* Make cards fill the row */
+}
+
+/* On hover, scale the card slightly */
+.job-card:hover {
+    transform: scale(1.05);
+}
+
+/* Arrow Styles */
+.arrows {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.arrows button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.arrows button:focus {
+    outline: none;
+}
+
+.arrows button:hover {
+    background-color: #2980b9;
+}
+
+/* Heading Style */
+.heading {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Styling the filter section */
+.filters {
+    margin-top: 40px; /* Increased top margin for more space */
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.filters form {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 800px;
+    width: 100%;
+}
+
+.filters label {
+    margin-right: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.filters select {
+    padding: 8px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    width: 200px;
+}
+.filters input[type="submit"] {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 3px;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.filters input[type="submit"]:hover {
+    background-color: #2980b9;
+}
